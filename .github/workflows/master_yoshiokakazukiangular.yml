@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'YoshiokaKazukiAngular'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3FEAB21383FD400A9AF2B9FEA680ABF5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DE117F333A79441FB4F50E78970E98BB }}
           package: .
