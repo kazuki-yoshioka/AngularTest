@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/a253bcc5-d120-4341-8bb2-4983c9bbaaf3/microsoft.web/sites/subscriptions/a253bcc5-d120-4341-8bb2-4983c9bbaaf3/resourceGroups/WebAppTest/providers/Microsoft.Web/sites/YoshiokaKazukiReactTest",
+    "appService.deploySubpath": "."
+}

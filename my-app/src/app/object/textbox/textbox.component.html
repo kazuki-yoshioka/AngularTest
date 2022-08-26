@@ -1,0 +1,9 @@
+<div class="my-textbox">
+  <!-- 入力フォーム -->
+  <input aria-label="input" class="form-control {{propatyInfo.elementClass}}" placeholder="{{propatyInfo.placeholder}}"
+    id="{{propatyInfo.elementId}}" name="{{propatyInfo.elementName}}" [(ngModel)]="inputValue"
+    (keyup)="keyPressEvent($event)" (blur)="blurEvent($event)">
+
+  <!-- エラー出力エリア -->
+  <span id="{{propatyInfo.elementId}}ErrAria" class="text-danger"></span>
+</div>

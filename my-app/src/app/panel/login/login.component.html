@@ -1,0 +1,32 @@
+<div>
+  <div>
+    <h1>ログイン画面</h1>
+  </div>
+
+  <div>
+    <button class="btn btn-light btn-outline-dark" (click)="loginLogic()">ログイン</button>
+  </div>
+
+  <div>
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>ユーザーID</td>
+          <td>
+            <input type="text" class="form-control" placeholder="ユーザーID" id="loginUserId" name="loginUserId"
+              maxlength="4" [(ngModel)]="userId">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class="form-label" for="nameName">パスワード</label>
+          </td>
+          <td>
+            <input type="password" class="form-control" placeholder="" id="loginPassword" name="loginPassword"
+              aria-label="password" maxlength="4" [(ngModel)]="password">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

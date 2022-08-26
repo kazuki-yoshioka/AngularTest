@@ -1,0 +1,59 @@
+<div class="page-header">
+  <h1 class="text-normal text-left">明細画面</h1>
+</div>
+
+<div>
+  <button class="btn btn-light btn-outline-dark">保存</button>
+</div>
+
+<div>
+  <table class="table table-striped table-bordered">
+    <tbody>
+      <tr>
+        <td>ユーザーID</td>
+        <td>
+          <app-textbox [initialValue]="user.id" [propatyInfo]="getPropaty('id')"
+            (changedValue)="changedValueAtUserName($event)">
+          </app-textbox>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class="form-label" for="nameName">ユーザー名</label>
+        </td>
+        <td>
+          <app-textbox [initialValue]="user.name" [propatyInfo]="getPropaty('name')"
+            (changedValue)="changedValueAtUserName($event)">
+          </app-textbox>
+        </td>
+      </tr>
+      <tr>
+        <td>年齢</td>
+        <td>
+          <app-textbox [initialValue]="user.age.toString()" [propatyInfo]="getPropaty('age')"
+            (changedValue)="changedValueAtUserAge($event)">
+          </app-textbox>
+        </td>
+      </tr>
+      <tr>
+        <td>部署</td>
+        <td>
+          <app-combobox [decptCd]="user.deptCd" (changeSelected)="changeSelectedDeptItem($event)" #deptComb>
+          </app-combobox>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- html内での分岐処理 -->
+  <container-element [ngSwitch]="user.id">
+    <div *ngSwitchCase="'0002'">
+      <p class="font-weight-bold h2">分岐処理</p>
+    </div>
+  </container-element>
+
+  <div>
+    <p (click)="changeDeptCd()">部署を初期化</p>
+  </div>
+
+</div>

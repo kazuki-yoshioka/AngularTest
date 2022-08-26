@@ -1,0 +1,8 @@
+<div>
+  <select aria-label="selectComponent" id="selectComponent" name="selectComponent" class="form-select"
+    [(ngModel)]="selected.key" (change)="changeSelectedItem()">
+    <option *ngFor="let item of items" [ngValue]="item.key">
+      {{item.value}}
+    </option>
+  </select>
+</div>
